@@ -120,7 +120,7 @@ def screen():
         print("[3] Quit\033[0m")
         print("\033[93m----------------------------------------------------------------------\033[0m")
         mod = int(raw_input("Enter your choice: "))
-        if mod != 1 and mod != 2 and mod != 3:
+        if mod < 1 or mod > 4:
             print("[!] Please enter a valid number")
             screen()
 
